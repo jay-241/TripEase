@@ -1,0 +1,14 @@
+/* Author: Shani Kachhadiya(sh248902@dal.ca) || Banner Id : B00917757 */
+
+.live_update_images {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: fit-content;
+}
+.live_update_images_vertical {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: fit-content;
+}

@@ -1,0 +1,6 @@
+# build project:
+#   image: node:18
+#   script:
+#     - cd client
+#     - npm install
+#     - npm run build

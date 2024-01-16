@@ -1,0 +1,211 @@
+/* Author: Shani Kachhadiya(sh248902@dal.ca) || Banner Id : B00917757 */
+
+.profile_pic_and_userName {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+.profile_page_div {
+	background-color: black;
+}
+.userName_in_profile_page {
+	margin-left: 5%;
+	margin-right: auto;
+	color: rgba(12, 28, 70, 1);
+}
+.profile_pic_in_profile_page {
+	height: 200px;
+	width: 200px;
+	margin-left: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.profile_container {
+	background-color: #fff;
+	width: 100%;
+	height: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.userName {
+	display: flex;
+	justify-content: baseline;
+	margin-bottom: 10px;
+	font-family: 'Poppins', sans-serif;
+	color: rgba(12, 28, 70, 1);
+}
+.location_img_and_location {
+	display: flex;
+	margin-top: 20px;
+}
+.location_image {
+	margin-top: 0%;
+	height: 15px;
+	width: 15px;
+	align-self: center;
+	fill: gray;
+}
+.location_image:hover {
+	fill: red;
+}
+.location {
+	margin-bottom: 0%;
+	color: grey;
+	margin-left: 15px;
+	height: 20px;
+	font-size: medium;
+	font-family: 'Poppins', sans-serif;
+	color: rgba(12, 28, 70, 1);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.instagram_image {
+	margin-top: 0%;
+	height: 15px;
+	width: 15px;
+	align-self: center;
+}
+.instagram_img_and_userName {
+	display: flex;
+	margin-top: 10px;
+}
+.insta_userName {
+	margin-bottom: 0%;
+
+	font-size: medium;
+	margin-left: 15px;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+}
+.bio {
+	margin-bottom: 0%;
+	color: grey;
+	font-size: large;
+	margin-top: 10px;
+	height: 20px;
+	display: flex;
+	font-family: 'Poppins', sans-serif;
+	color: rgba(12, 28, 70, 1);
+}
+.bio_text {
+	font-size: 15px;
+	font-family: 'Poppins', sans-serif;
+}
+.live_updates_div {
+	height: 100px;
+	width: 90%;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: scroll;
+	overflow-y: hidden;
+}
+.live_updates_div::-webkit-scrollbar {
+	display: none;
+}
+.user_posts_div {
+	margin-top: 15px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: fit-content;
+	margin-bottom: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	row-gap: 20px;
+}
+.profile_edit_button_in_profile_page Button {
+	font-size: 10px;
+	padding: 4px 6px;
+}
+
+@media only screen and (max-width: 935px) {
+	.user_posts_div {
+		grid-template-columns: 1fr;
+	}
+	.profile_pic.large_profile_pic {
+		height: 150px;
+		width: 150px;
+	}
+	.profile_edit_button_in_profile_page .dynamic-button {
+		margin-left: 0 px;
+		height: 40px;
+		width: 140px;
+	}
+}
+
+@media only screen and (min-width: 935px) and (max-width: 1200px) {
+	.profile_pic.large_profile_pic {
+		height: 150px;
+		width: 150px;
+	}
+}
+@media only screen and (min-width: 935px) and (max-width: 1400px) {
+	.user_posts_div {
+		grid-template-columns: 1fr 1fr;
+	}
+	.profile_pic.large_profile_pic {
+		height: 150px;
+		width: 150px;
+	}
+}
+@media only screen and (min-width: 1400px) and (max-width: 1800px) {
+	.user_posts_div {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+.live_updates_div .live_update_pic {
+	margin-right: 20px;
+}
+.edit_profile_and_setting_btn_div {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.setting_img_in_profile {
+	fill: gray;
+}
+.setting_img_in_profile:hover {
+	fill: black;
+	cursor: pointer;
+}
+.profile_edit_button_in_profile_page {
+	display: flex;
+	flex-direction: row;
+
+	align-self: flex-start;
+}
+@media only screen and (max-width: 762px) {
+	.profile_pic_and_userName {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+	.userName_in_profile_page {
+		margin-left: 0%;
+		margin-bottom: 10px;
+	}
+	.profile_pic_in_profile_page {
+		margin-left: 0;
+	}
+	.edit_profile_and_setting_btn_div {
+		margin-top: 0;
+	}
+}
